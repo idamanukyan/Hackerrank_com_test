@@ -16,9 +16,6 @@ public class NavigationMenu {
     @FindBy(css = "a[href='/profile']")
     private WebElement profileLink;
 
-    @FindBy(css = "a[href='/settings']")
-    private WebElement settingsLink;
-
     public NavigationMenu(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -30,10 +27,6 @@ public class NavigationMenu {
 
     public void clickProfileLink() {
         profileLink.click();
-    }
-
-    public void clickSettingsLink() {
-        settingsLink.click();
     }
 
     public void clickMenuItem(String itemName) {

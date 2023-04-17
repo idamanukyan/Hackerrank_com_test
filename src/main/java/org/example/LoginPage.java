@@ -24,6 +24,10 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
+    public String getTitle() {
+        return driver.getTitle();
+    }
+
     public void enterUsername(String username) {
         usernameInput.sendKeys(username);
     }
@@ -34,5 +38,12 @@ public class LoginPage {
 
     public void clickSubmitButton() {
         submitButton.click();
+    }
+
+    public HomePage login(String username, String password) {
+        enterUsername(username);
+        enterPassword(String.valueOf(password));
+        clickSubmitButton();
+        return new HomePage(driver);
     }
 }

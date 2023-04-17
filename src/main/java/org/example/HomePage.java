@@ -16,6 +16,13 @@ public class HomePage {
     @FindBy(css = "a[href='/logout']")
     private WebElement logoutLink;
 
+    @FindBy(css = "a[href='/dashboard']")
+    private WebElement dashboardLink;
+
+    @FindBy(css = "a[href='/profile']")
+    private WebElement profileLink;
+
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -28,4 +35,30 @@ public class HomePage {
     public void clickLogoutLink() {
         logoutLink.click();
     }
+
+    public LoginPage logout() {
+        clickLogoutLink();
+        return new LoginPage(driver);
+
+    }
+
+    public void clickDashboardLink() {
+        dashboardLink.click();
+    }
+
+    public DashboardPage goToDashboard() {
+        clickDashboardLink();
+        return new DashboardPage(driver);
+    }
+
+    public void clickProfileLink() {
+        profileLink.click();
+    }
+
+    public ProfilePage goToProfile() {
+        clickProfileLink();
+        return new ProfilePage(driver);
+    }
+
+
 }

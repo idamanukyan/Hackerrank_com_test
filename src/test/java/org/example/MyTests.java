@@ -38,14 +38,6 @@ public class MyTests extends BaseTest {
     }
 
     @Test
-    public void testSettingsNavigation() {
-        HomePage homePage = new HomePage(driver);
-        SettingsPage settingsPage = homePage.goToSettings();
-        String pageTitle = settingsPage.getTitle();
-        Assert.assertEquals(pageTitle, "Settings");
-    }
-
-    @Test
     public void testInteractionBetweenPages() {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.login("username", "password");
