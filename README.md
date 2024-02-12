@@ -10,7 +10,7 @@ Prerequisites:
 Ensure you have the latest version of Python installed.
 Install the required Python packages using pip install -r requirements.txt.
 Usage:
-Clone the repository: git clone https://github.com/your-username/HackerRank_com_test.git
+Clone the repository: git clone https://github.com/idamanukyan/HackerRank_com_test.git
 Navigate to the project directory: cd HackerRank_com_test
 Update the config.json file with your HackerRank credentials.
 Run the tests using: python test_hackerrank.py
