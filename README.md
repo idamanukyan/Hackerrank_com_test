@@ -1,31 +1,67 @@
-HackerRank_com_test
-Overview:
-This project is a Selenium-based test automation suite for HackerRank challenges. The primary goal is to automate the testing process, providing a reliable and efficient way to validate your HackerRank solutions.
+🤖 HackerRank Test Automation Suite
 
-Features:
-Challenge Navigation: Automatically navigate through HackerRank challenges.
-Code Submission: Submit code solutions programmatically.
-Result Validation: Verify the correctness of the code output and test against sample inputs/outputs.
-Prerequisites:
-Ensure you have the latest version of Python installed.
-Install the required Python packages using pip install -r requirements.txt.
-Usage:
-Clone the repository: git clone https://github.com/idamanukyan/HackerRank_com_test.git
-Navigate to the project directory: cd HackerRank_com_test
-Update the config.json file with your HackerRank credentials.
-Run the tests using: python test_hackerrank.py
-Configuration:
-Adjust the config.json file with your HackerRank username, password, and other settings.
+A Selenium-based test automation framework for validating HackerRank coding challenges.
+This tool automates challenge navigation, code submission, and result verification to ensure efficient and reliable testing.
 
-json
-Copy code
+🎯 Overview
+
+The goal of this project is to provide a fast and automated way to test HackerRank solutions, eliminating repetitive manual validation.
+
+🚀 Features
+
+📂 Challenge Navigation – Automatically browse HackerRank challenges.
+
+⌨️ Code Submission – Submit solutions programmatically.
+
+✅ Result Validation – Verify outputs against sample test cases.
+
+⚙️ Prerequisites
+
+Python (latest version recommended)
+
+Selenium & dependencies (installed via requirements.txt)
+
+A valid HackerRank account
+
+🛠️ Installation & Setup
+# Clone the repository
+git clone https://github.com/idamanukyan/HackerRank_com_test.git
+
+# Navigate into the project directory
+cd HackerRank_com_test
+
+# Install dependencies
+pip install -r requirements.txt
+
+▶️ Usage
+
+Update your HackerRank credentials in config.json:
+
 {
   "username": "your_hackerrank_username",
   "password": "your_hackerrank_password",
   "browser": "chrome"
 }
-Contributions:
-Contributions are welcome! Feel free to open issues or pull requests.
 
-License:
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Run the test suite:
+
+python test_hackerrank.py
+
+⚙️ Configuration
+
+username → your HackerRank username
+
+password → your HackerRank password
+
+browser → "chrome" or "firefox" (based on your local setup)
+
+🤝 Contributions
+
+Contributions are welcome! 🎉
+Feel free to open an issue or submit a pull request to improve functionality.
+
+📜 License
+
+This project is licensed under the MIT License – see LICENSE.md
+ for details.
